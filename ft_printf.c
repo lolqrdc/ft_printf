@@ -6,7 +6,7 @@
 /*   By: loribeir <loribeir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 11:08:20 by loribeir          #+#    #+#             */
-/*   Updated: 2024/11/24 15:09:24 by loribeir         ###   ########.fr       */
+/*   Updated: 2024/11/24 16:02:00 by loribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,11 +56,32 @@ int	check_specifier(va_list args, char spec, int *count)
 		ft_print_sign(count);
 	return (*count);
 }
-/*int main(void)
+/*int main()
 {
-	int	num = 0;
+// test00 char
+	ft_printf("Bonjour, %c\n", 'R');
+	printf("Bonjour, %c\n", 'R');
+// test01 string
+	ft_printf("Bonjour, %s\n", "le monde");
+	printf("Bonjour, %s\n", "le monde");
+// test02 pointer
+	int num = 42;
 	void *ptr = &num;
-	
-	printf("size : %d \n", ft_printf("%p", ptr));
-	printf("size : %d \n", printf("%p", ptr));
+	ft_printf("Bonjour, %p\n", ptr);
+	printf("Bonjour, %p\n", ptr);
+//test03 decimal
+	ft_printf("Bonjour, %d ou %i\n", 42, -42);
+	printf("Bonjour, %d ou %i\n", 42, -42);
+//test04 unsigned
+	ft_printf("Bonjour, %u\n", 4294967295U);
+	printf("Bonjour, %u\n", 4294967295U);
+//test05 hex lower
+	ft_printf("Bonjour, %x\n", 255);
+	printf("Bonjour, %x\n", 255);
+//test06 hex upper
+	ft_printf("Bonjour, %X\n", 255);
+	printf("Bonjour, %X\n", 255);
+//test07 percent
+	ft_printf("Bonjour, %%\n");
+	printf("Bonjour, %%\n");
 }*/
