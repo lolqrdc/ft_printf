@@ -6,7 +6,7 @@
 /*   By: loribeir <loribeir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 11:08:33 by loribeir          #+#    #+#             */
-/*   Updated: 2024/11/24 13:55:16 by loribeir         ###   ########.fr       */
+/*   Updated: 2024/11/24 16:08:39 by loribeir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@
 
 int		ft_printf(const char *specifier, ...);
 int		check_specifier(va_list args, char spec, int *count);
-void	ft_putchar(char c);
 /* ------------ */
 void	ft_print_str(char *str, int *count);
 void	ft_print_char(char c, int *count);
+void	ft_putchar(char c);
 void	ft_print_ptr(unsigned long ptr, int *count);
 void	ft_print_decimal(int nb, int *count);
 void	ft_print_unsigned_dec(unsigned int nb, int *count);
